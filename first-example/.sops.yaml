@@ -1,0 +1,8 @@
+creation_rules:
+  - type: encrypted_file
+    path_suffix: .enc
+    encryption_method: age
+    age: "age1ysgkg7cmf238qlmwfen4c4pl8tex3p0yqw2fcyk4x300wy4awucq8kngz7"
+
+sops:
+  encryption_method: age

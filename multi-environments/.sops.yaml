@@ -1,0 +1,27 @@
+creation_rules:
+  - path_regex: .*dev.*
+    path_suffix: .enc
+    encryption_method: age
+    key_groups:
+      - age:
+          # dev public key
+          - age1s5lx8prca0rd2ky2enaqqa7fek68xgg7fp9jmuz9zpppsr5czpgqjgf2q6
+
+  - path_regex: .*staging.*
+    path_suffix: .enc
+    encryption_method: age
+    key_groups:
+      - age:
+          # staging public key
+          - age198ce76jtw2hxw8j0z6v4h4as4kergha884xde3eaw27jlyd8x9vshu6zan
+
+  - path_regex: .*prod.*
+    path_suffix: .enc
+    encryption_method: age
+    key_groups:
+      - age:
+          # prod public key
+          - age1jcr6svzuztxy0arhy82hn5du0z25wku7ytxlemxj8xz6nxkdr96qx2uec5
+
+sops:
+  encryption_method: age

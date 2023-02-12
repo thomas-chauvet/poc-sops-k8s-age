@@ -1,0 +1,13 @@
+creation_rules:
+  - type: encrypted_file
+    path_suffix: .enc
+    encryption_method: age
+    key_groups:
+      - age:
+          # Bob's public key
+          - age1d5mlv264rn0ds93s8jep5a6xpfcppg2jh5l8lnl4wt5dtpdlduds07mwa9
+          # Alice's public key
+          - age14m7y2gxqtq3r72xfj9z0vrfywuvpt9cj6dfg93nktufsxwe0pf0sjtc25r
+
+sops:
+  encryption_method: age
